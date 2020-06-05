@@ -1,0 +1,20 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link href="{% static 'CRUD_OPS/style.css' %}" rel='stylesheet' type='text/css'>
+        <title>Registration form</title>
+        <!-- <h1>Please Register Here!</h1> -->
+    </head>
+    <body>
+        <form method="POST">
+            <center>
+                <h1>Please Register Here!</h1>
+                <br>
+                <br>
+                {{ form.as_p }} {% csrf_token %}
+                <input type="submit" class="btn btn-primary" value="Register" />
+            </center>
+        </form>
+    </body>
+</html>

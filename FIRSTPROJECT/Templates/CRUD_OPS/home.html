@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load staticfiles %}
+    <h1>Sitemap</h1>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="{% static 'CRUD_OPS/style.css' %}" rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <table class="table table-striped table-bordered table-sm">
+        <thead class="thead-dark">
+            <tr>
+                <th>Site</th>
+                <th>Description</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Register</td>
+                <td>Link to Registration Form</td>
+                <td><a href="register">Link</a>
+            </tr>
+            <tr>
+                <td>Show</td>
+                <td>View all registered users</td>
+                <td><a href="show">Link</a>
+            </tr>
+            <tr>
+                <td>Edit/delete</td>
+                <td>Edit user data</td>
+                <td><a href="success">Link</a>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

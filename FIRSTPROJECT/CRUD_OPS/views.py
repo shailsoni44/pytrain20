@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from .models import register
 from CRUD_OPS import forms
 from .forms import registerform
+from django.views.generic.edit import UpdateView
 
 # Create your views here.
 def register_view(request):
@@ -41,4 +42,12 @@ def update(request, id):
             return redirect("success")
         except:
             print('Error saving details')
-    return render(request,"CRUD_OPS/edit.html",{"person":person})    
+    return render(request,"CRUD_OPS/edit.html",{"person":person})
+
+def show(request):
+    people=register.objects.all()
+    return render(request,'CRUD_OPS/show.html',{'people':people})
+
+def home(request):
+    return render(request,'CRUD_OPS/home.html')
+      

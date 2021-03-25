@@ -48,11 +48,11 @@ HelloWorld = "Upper camel case"
 hello_world = "snake case"
 
 print('we can write Hello world in',helloWorld,'like helloWorld' ,
-'\nwe can write Hello world in',HelloWorld,'like HelloWorld' ,
-'\nwe can write Hello world in',hello_world,'like hello_world')
+    '\nwe can write Hello world in',HelloWorld,'like HelloWorld' ,
+    '\nwe can write Hello world in',hello_world,'like hello_world')
 
 print("\nQuestion 8\n")
 
 print("Yes it will change value of a, Python is Dynamic language so it will take the latest value of a," ,
-"\nand every variable is free to have any data type")
+    "\nand every variable is free to have any data type")
 

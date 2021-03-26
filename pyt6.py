@@ -1,4 +1,5 @@
 print("\nQuestion 1\n")
+print("\nQuestion 1\n")
 y=list(filter(lambda x:x%7==0 and x%3!=0 , range(1,100)))
 
 print("List of",y)
